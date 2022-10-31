@@ -9,7 +9,7 @@ body {
 
 
 html {
-     overflow: hidden;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -46,52 +46,3 @@ html {
     /*border-radius: 10px;*/
 }
 
-/*.cars-text {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    font-family: Bahnschrift;*/
-/*    background-color: rgba(0, 0, 0, 0.8);*/
-/*    width: 100%;*/
-/*    height: 30%;*/
-/*    color: white;*/
-/*    border-radius: 10px;*/
-
-/*}*/
-
-
-
-
-
-
-
-/*.card-picture {*/
-/*    !*background: url("") no-repeat;*!*/
-/*    width: 100%;*/
-/*    height: 70%;*/
-/*    z-index: 3;*/
-/*    position: relative;*/
-/*    border-radius: 10px;*/
-/*}*/
-
-/*.card-text {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    font-family: Bahnschrift;*/
-/*    background-color: rgba(0, 0, 0, 0.4);*/
-/*    width: 30%;*/
-/*    height: 30%;*/
-/*    color: white;*/
-/*    border-radius: 10px;*/
-/*}*/
-
-/*.card:hover {*/
-/*    figcaption;*/
-/*    transform: translateY(0px);*/
-/*    background: transparentize(#2C3F52, 0.1);*/
-/*}*/
-
-/*.card-text:hover {*/
-/*    height: 70%;*/
-/*}*/
