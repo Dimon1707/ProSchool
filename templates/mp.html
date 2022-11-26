@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="{% static 'semenstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'sofistyle.css' %}">
 </head>
 <body>
 <header>
@@ -38,50 +38,67 @@
         </nav>
     </div>
 </header>
-<div class="container">
-    <div class="card">
-        <div class="content">
-            <h2>
-                15
-            </h2>
-            <h3>
-                PYTHON
-            </h3>
-            <p>
-
-            </p>
-            <a href="#">Read More</a>
-        </div>
+<div class="page">
+    <div class="wrap">
+        <h1 class="title-main">Выбери дизайн который ты хочешь!</h1>
+        <p class="text-main">Не продаем сайт, а продаем экспертность, упаковку бизнеса,</p>
+        <p class="text-main">которая будет работать и приносить результат</p>
+        <li>
+            <a href={% url 'form' %}>
+                <button type="button" class="button_main">Наши контакты</button>
+            </a>
+        </li>
     </div>
-    <div class="card">
-        <div class="content">
-            <h2>
-                30
-            </h2>
-            <h3>
-                PYTHON
-            </h3>
-            <p>
-
-            </p>
-            <a href="#">Read More</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2>
-                60
-            </h2>
-            <h3>
-                PYTHON
-            </h3>
-            <p>
-
-            </p>
-            <a href="#">Read More</a>
+</div>
+<div class="page page-top">
+    <div class="wrap">
+        <h2>НАШИ УСЛУГИ</h2>
+        <div class="courses">
+            <div class="courses-item">
+                <div>
+                    <h3>Создаем сайты на заказ так, чтобы сохранить ваш бюджет и получить клиентов.</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="courses-item">
+                <div>
+                    <h3>Соблюдаем современные тренды, а также потребности клиентов.</h3>
+                </div>
+            </div>
+            <div class="courses-item">
+                <div>
+                    <h3>В будущем компании не придется нанимать людей для доработки и правок.</h3>
+                </div>
+            </div>
+            <div class="courses-item">
+                <div>
+                    <h3>Создаем чистый эстетичный дизайн для всех разрешений без перегруза.</h3>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<div class="page page-top">
+    <div class="wrap">
+        <h2>НАША КОМАНДА</h2>
+        <div class="team">
+            <div class="team-item">
+                <img src="" alt="">
+                <div>
+                    <h3>Семён</h3>
+                    <p>Full-KEK Разработчик</p>
+                </div>
+            </div>
+            <div class="team-item">
+                <img src="" alt="">
+                <div>
+                    <h3>Дима</h3>
+                    <p>PROSTO_CHUDO Разработчик</p>
+                </div>
 
-
+            </div>
+        </div>
+    </div>
+</div>
 </body>
