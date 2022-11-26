@@ -2,6 +2,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+/*url("../imges/GTR-3.jpg") no-repeat*/
 .header {
     width: 100%;
     max-width: 1180px;
@@ -14,6 +16,7 @@ body {
     align-items: center;
     box-sizing: border-box;
     font-weight: 700;
+    /*background: url("images/компьютер.jpg") no-repeat;*/
 }
 
 .wrap {
@@ -118,14 +121,6 @@ body {
     color: #B2B2B2;
     line-height: 1.5;
 }
-
-
-
-
-
-
-
-
 
 
 

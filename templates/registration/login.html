@@ -1,32 +1,71 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Proshool/log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
 </head>
 <body>
-    <nav>
-        <div class="register_logo">
-            <a href="/">Login menu</a>
-        </div>
+<header>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                PROSCHOOL
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href={% url 'index' %}>
+                        <button class="nav_btn1" type="button">home</button>
+                    </a>
+                </li>
 
-        <div class="menu">
-            <ul>
-                <li><a href={% url 'form' %}><u>Sign up</u></a></li>
-                <li><a href={% url 'register' %}><u>Sign in</u></a></li>
-                <li><a href={% url 'login' %}><u>Log in</u></a></li>
+                <li>
+                    <a href={% url 'mp' %}>
+                        <button class="nav_btn1" type="button">courses</button>
+                    </a>
+                </li>
+                <li>
+                    <a href={% url 'form' %}>
+                        <button class="nav_btn" type="button">contact</button>
+                    </a>
+                </li>
             </ul>
-        </div>
-    </nav>
-<form method="POST">
-    {% csrf_token %}
-    <input name="username" placeholder="username">
-    <input name="password" placeholder="password">
-    <button type="submit">
-        Login
-    </button>
-</form>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <form method="POST">
+        {% csrf_token %}
+        <input name="username" placeholder="username">
+        <input name="password" placeholder="password">
+        <button type="submit">
+            Login
+        </button>
+    </form>
+    <div class="nav-form">
+        <li>
+            <a href={% url 'form' %}>
+                <button class="nav_btn_form" type="button">Sign up</button>
+            </a>
+        </li>
+        <li>
+            <a href={% url 'register' %}>
+                <button class="nav_btn_form" type="button">Sign in</button>
+            </a>
+        </li>
+        <li>
+            <a href={% url 'login' %}>
+                <button class="nav_btn_form" type="button">Log in</button>
+            </a>
+        </li>
+    </div>
+</div>
 </body>
 </html>
 © 2022 GitHub, Inc.

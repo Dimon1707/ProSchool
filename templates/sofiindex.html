@@ -8,24 +8,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="{% static 'sofistyle.css' %}">
+    <link rel="stylesheet" href="{% static 'dimonstyle.css' %}">
     <title>Proschool</title>
 </head>
 <body>
 <header>
     <div class="header">
-        <div class="logo">
-            PROSCHOOL
-        </div>
         <nav>
+            <div class="logo">
+                PROSCHOOL
+            </div>
             <ul class="nav">
                 <li>
                     <a href={% url 'index' %}>
-                    <button class="nav_btn" type="button">home</button>
+                        <button class="nav_btn" type="button">home</button>
                     </a>
                 </li>
-                <li><a href={% url 'mp' %}>courses</a></li>
-                <li><a href={% url 'form' %}>contact</a></li>
+
+                <li>
+                    <a href={% url 'mp' %}>
+                        <button class="nav_btn1" type="button">courses</button>
+                    </a>
+                </li>
+                <li>
+                    <a href={% url 'form' %}>
+                        <button class="nav_btn1" type="button">contact</button>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -51,28 +60,32 @@
                 <img src="img/icon1.png" alt="">
                 <div>
                     <h3>Курсы программирования, которые доступны каждому</h3>
-                    <p>Мы уверены, что получение новой профессии в программировании может быть интересным и безболезненным, даже если вы никогда не писали код</p>
+                    <p>Мы уверены, что получение новой профессии в программировании может быть интересным и
+                        безболезненным, даже если вы никогда не писали код</p>
                 </div>
             </div>
             <div class="courses-item">
                 <img src="img/icon2.png" alt="">
                 <div>
                     <h3>Идеально для быстрого старта в новой востребованной профессии</h3>
-                    <p>Python - самый простой язык для старта,к тому же, его популярность быстро растет. Знание этого современного языка программирования поможет вам открыть путь в топовые IT-компании</p>
+                    <p>Python - самый простой язык для старта,к тому же, его популярность быстро растет. Знание этого
+                        современного языка программирования поможет вам открыть путь в топовые IT-компании</p>
                 </div>
             </div>
             <div class="courses-item">
                 <img src="img/icon3.png" alt="">
                 <div>
                     <h3>Поддержка от нашей дружной команды</h3>
-                    <p>Команда преподавателей и кураторов всегда будет рядом и ответит на все ваши вопросы. Вы обретете новое окружение и множество контактов в IT-сфере</p>
+                    <p>Команда преподавателей и кураторов всегда будет рядом и ответит на все ваши вопросы. Вы обретете
+                        новое окружение и множество контактов в IT-сфере</p>
                 </div>
             </div>
             <div class="courses-item">
                 <img src="img/icon4.png" alt="">
                 <div>
                     <h3>Большое количество практики, проектов и заданий</h3>
-                    <p>Мы поможем вам создать портфолио для трудоустройства. После обучения вы будете полностью готовы к собесдованиям</p>
+                    <p>Мы поможем вам создать портфолио для трудоустройства. После обучения вы будете полностью готовы к
+                        собесдованиям</p>
                 </div>
             </div>
         </div>
@@ -86,22 +99,16 @@
                 <img src="" alt="">
                 <div>
                     <h3>Семён</h3>
-                    <p>Backend разработчик</p>
-                </div>
-            </div>
-            <div class="team-item">
-                <img src="" alt="">
-                <div>
-                    <h3>София</h3>
-                    <p>Frontend разработчик</p>
+                    <p>Full-KEK Разработчик</p>
                 </div>
             </div>
             <div class="team-item">
                 <img src="" alt="">
                 <div>
                     <h3>Дима</h3>
-                    <p>Frontend разработчик</p>
+                    <p>PROSTO_CHUDO Разработчик</p>
                 </div>
+
             </div>
         </div>
     </div>

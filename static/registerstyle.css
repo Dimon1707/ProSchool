@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background-color: #161623;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(red, deeppink);
+    clip-path: circle(40% at right 30%);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%);
+}
+.header {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 1000;
+}
+
+.wrap {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    background-color: #dfdddd;
+    display: flex;
+    z-index: 4;
+}
+
+.nav_btn {
+    background-color: #5528FF;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 59%;
+}
+
+.nav_btn1 {
+    background-color: #dfdddd ;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: black;
+    border: none;
+    font-weight: 700;
+}
+.nav_btn1:hover {
+    background-color: orange;
+}
+
+.nav>li {
+    margin-left:36px;
+}
+
+.nav>li>a {
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 50px;
+    z-index: 1;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    background-color: green;
+    margin-top: 150px;
+    color: white;
+    width: 700px;
+    height: 500px;
+    margin-left: 27%;
+    padding: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    list-style-type: none;
+}
+
+.nav_btn_form {
+    color: black;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10%;
+    font-weight: 700;
+    background-color: darkorange;
+    margin: 10%;
+
+}
+
+.nav-form {
+    justify-content: center;
+    align-items: center;
+    margin-top: 27%;
+    display: flex;
+}
+
+.register-btn {
+    background-color: darkorange;
+}

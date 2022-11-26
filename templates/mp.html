@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>PROSCHOOL/Courses</title>
-    <link rel="stylesheet" href="{% static 'stylemp1.css' %}">
-    <header>
-        <div class="header">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="{% static 'semenstyle.css' %}">
+</head>
+<body>
+<header>
+    <div class="header">
+
+        <nav>
             <div class="logo">
                 PROSCHOOL
             </div>
-            <nav>
-                <ul class="nav">
-                    <li><a href={% url 'index' %}> home</a></li>
-                    <li>
-                        <a href={% url 'mp' %}>
-                            <button class="nav_btn" type="button">courses</button>
-                        </a>
-                    </li>
-                    <li><a href={% url 'form' %}>contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-</head>
-<body>
+            <ul class="nav">
+                <li>
+                    <a href={% url 'index' %}>
+                        <button class="nav_btn1" type="button">home</button>
+                    </a>
+                </li>
+                <li>
+                    <a href={% url 'mp' %}>
+                        <button class="nav_btn" type="button">courses</button>
+                    </a>
+                </li>
+                 <li>
+                    <a href={% url 'form' %}>
+                        <button class="nav_btn1" type="button">contact</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <div class="container">
     <div class="card">
         <div class="content">
@@ -56,7 +70,7 @@
     <div class="card">
         <div class="content">
             <h2>
-                01
+                60
             </h2>
             <h3>
                 PYTHON
