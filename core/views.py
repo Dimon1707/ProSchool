@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.views import auth_logout
 from core.forms import UserRegistrationForm
-from core.models import Contact
+from core.models import Customer, Service
+from django.views.generic import CreateView,  DetailView
 
 
 def index(reguest):
@@ -12,6 +13,7 @@ def index(reguest):
     '''
     return render(reguest, 'sofiindex.html')
 
+
 def mainpage(reguest):
     '''
 
@@ -20,6 +22,7 @@ def mainpage(reguest):
     '''
     return render(reguest, 'mp.html')
 
+
 def mainpage1(reguest):
     '''
 
@@ -27,6 +30,7 @@ def mainpage1(reguest):
 
     '''
     return render(reguest, 'mp.html')
+
 
 def form(request):
     '''
@@ -60,3 +64,30 @@ def register(request):
 def logout(request):
     auth_logout(request)
     return render(request, 'form.html')
+
+
+def customer_form(request):
+    if request.method == 'GET':
+        return render(request, 'form.html')
+
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        phone = request.POST.get('phone')
+        email = request.POST.get('email')
+
+        customer = Customer(name=name, phone=phone, email=email)
+        customer.save()
+        return render(request, 'form.html')
+
+
+def ServiceListView(request):
+    if request.method == 'GET':
+        ServiceList = Service.objects.all()
+        context = {'ServiceList': ServiceList, }
+        return render(request, 'service_list.html', context)
+
+
+class ServiceDetailView(DetailView):
+    model = Service
+    context_object_name = 'ServiceDetail'
+    template_name = 'service_detail.html'

@@ -1,0 +1,43 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceDetail</title>
+    <link rel="stylesheet" href="{% static 'sofistyle.css' %}">
+</head>
+<body>
+<header>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                Front
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href={% url 'index' %}>
+                        <button class="nav_btn" type="button">home</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href={% url 'mp' %}>
+                        <button class="nav_btn1" type="button">servises</button>
+                    </a>
+                </li>
+                <li>
+                    <a href={% url 'form' %}>
+                        <button class="nav_btn1" type="button">contact</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="forma">
+    <p><a href="{% url 's_list' %}">Back to Service List</a></p>
+    <p>title-{{ ServiceDetail.title }}</p>
+    <p>description-{{ ServiceDetail.description }}</p>
+    <div>
+        <p></p><img src="/images/31.jpg" alt="" width="100" height="100"></p>
+</body>
+</html>

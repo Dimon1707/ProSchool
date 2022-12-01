@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static '3style.css' %}">
+    <title>Services</title>
+</head>
+<body>
+    <h1>Here are our services</h1>
+    <hr>
+    {% for i in ServiceList %}
+        <p><a href="{% url 's_detail' i.pk %}">{{ i.pk }} {{ i.title }}</a></p>
+    {% endfor %}
+    <form method="post">
+        {% csrf_token %}
+    </form>
+</body>
+</html>
